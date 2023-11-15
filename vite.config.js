@@ -14,8 +14,8 @@ export default defineConfig({
       injectRegister: "auto",
       includeAssets: ["assets/pwa/*"],
       manifest: {
-        name: "Bazar Online Joshua",
-        short_name: "Bazar Online Joshua",
+        name: "Jimena's Bazar Online",
+        short_name: "Jimena's Bazar Online",
         theme_color: "#ffffff",
         icons: [
           {

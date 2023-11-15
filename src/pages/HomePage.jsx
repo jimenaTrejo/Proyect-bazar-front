@@ -84,7 +84,7 @@ const HomePage = () => {
     {error && (
       <div className="alert alert-danger mt-4" style={{ backgroundColor: "#f8d7da", borderRadius: "10px" }}>
         <p className="font-weight-bold" style={{ color: "#721c24" }}>Error</p>
-        <p style={{ color: "#721c24" }}>Hubo un error en la búsqueda</p>
+        <p style={{ color: "#721c24" }}>No se pudo obtener el producto</p>
       </div>
     )}
 
@@ -97,11 +97,7 @@ const HomePage = () => {
 
     {productos.length > 0 && (
       <>
-        <p className="text-center my-4 text-secondary font-weight-bold">
-          Mostrando {productos.length} de {total} productos
-        </p>
         <ProductosList productos={productos} />
-        <Paginator page={page} pages={pages} setPage={setPage} />
       </>
     )}
   </div>
